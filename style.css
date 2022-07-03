@@ -1,0 +1,135 @@
+:root {
+  --helvetica: 'Helvetica', sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--helvetica);
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+} 
+
+header {
+  position: absolute;
+  display: flex;
+  column-gap: 15px;
+  /* background-color: yellow; */
+  padding: 60px 60px;
+}
+
+header .line-container .line {
+  margin: 20% auto;
+  width: 40px;
+  height: 2px;
+  background-color: #848484;
+}
+
+header .portfolio {
+  font-weight: bold;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  grid-template-rows: 1fr;
+  column-gap: 4rem;
+  padding: 100px 60px 0 60px;
+  background-image: url('assets/Group\ 5.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+main #left-side {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  height: fit-content;
+  margin-top: 4rem;
+  /* background-color: burlywood; */
+}
+
+main #left-side h1 {
+  font-size: 80px;
+  color: #303030;
+  letter-spacing: -2px;
+}
+
+main #left-side h4 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #303030;
+  letter-spacing: -1px;
+}
+
+main #left-side .description {
+  font-size: 20px;
+  color: #666666;
+}
+
+main #left-side .hello {
+  font-weight: 600;
+  color: #1E9D9D;
+  font-size: 20px;
+}
+
+main #center-side {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  /* background-color: green; */
+}
+
+main #center-side img {
+  /* background-color: red; */
+  width: 100%;
+}
+
+main #right-side {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 6rem;
+  padding-bottom: 60px;
+}
+
+main #right-side .icons {
+  color: white;
+}
+
+main #right-side .icons > div {
+  width: fit-content;
+  margin: 24px auto;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+main #right-side .portfolio {
+  transform: rotate(90deg);
+  color: white;
+  font-weight: bold;
+  margin: 2rem auto;
+  /* background-color: crimson; */
+}
+
+main #right-side .line-container {
+  width: 1px;
+  height: 40px;
+  margin: 1rem auto;
+  background-color: white;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
